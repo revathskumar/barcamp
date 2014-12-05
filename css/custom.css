@@ -30,3 +30,34 @@
   font-size: 1.1em;
   line-height: 50px;
 }
+
+.reveal ul.large-font {
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.pull-left {
+    float:left
+}
+
+.pull-right {
+    float:right
+}
+
+.print-pdf .reveal ul.large-font {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.print-pdf .reveal {
+    width: 1200px !important;
+}
+
+.print-pdf .reveal .slides {
+    width: 1200px !important;
+}
+
+.print-pdf .reveal .slides section {
+    padding-left: .5cm !important;
+    padding-right: .5cm !important;
+}
