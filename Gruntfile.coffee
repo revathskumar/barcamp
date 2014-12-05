@@ -29,7 +29,7 @@ module.exports = (grunt) ->
             jshint:
                 files: ['js/*.js']
                 tasks: ['jshint']
-        
+
         connect:
 
             livereload:
@@ -77,7 +77,7 @@ module.exports = (grunt) ->
                     filter: 'isFile'
                 }]
 
-        
+
 
 
     # Load all grunt tasks.
@@ -125,7 +125,7 @@ module.exports = (grunt) ->
             'copy'
         ]
 
-    grunt.registerTask 'build_pdf', ->
+    grunt.registerTask 'pdf', ->
 
         childProcess  = require('child_process')
         phantomjs     = require('phantomjs')
@@ -135,14 +135,12 @@ module.exports = (grunt) ->
         childArgs = [
            'bower_components/reveal.js/plugin/print-pdf/print-pdf.js',
            'http://localhost:9000/index.html?print-pdf',
-           'communities.pdf'
-        ];
+           'meetups.pdf'
+        ]
 
         childProcess.execFile binPath, childArgs, (error, stdout, stderr) ->
-           grunt.log.writeln(stdout);
-           done(error);
-
-    
+            grunt.log.writeln(stdout)
+            done(error)
 
     # Define default task.
     grunt.registerTask 'default', [
