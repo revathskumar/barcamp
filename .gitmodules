@@ -1,0 +1,4 @@
+[submodule "dist"]
+	path = dist
+	url = git@github.com:revathskumar/barcamp.git
+	branch = gh-pages
