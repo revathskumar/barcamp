@@ -1,1 +1,1 @@
-# Earned like minded friends
+# Earned like-minded friends

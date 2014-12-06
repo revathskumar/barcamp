@@ -1,1 +1,1 @@
-# Know other work environments outside your work
+# Know work environments outside your work
